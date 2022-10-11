@@ -30,11 +30,11 @@ This is a back-end stock-app project made with Django DRF. I have used different
 
 - Django
 - Django Rest Framework
-- drf-yasg (Swagger generator)
-- Django Debug Toolbar
 - Django Nested Admin
 - Django Filter
 - PostgreSQL
+- Django Debug Toolbar
+- drf-yasg (Swagger generator)
 - dj-rest-auth
 
 ## Notes

@@ -28,4 +28,8 @@ urlpatterns = [
 
     # Url path for django-debug-toolbar:
     path('__debug__/', include('debug_toolbar.urls')), 
+
+    # app paths
+    path("account/", include("account.urls")),
+    # path('stock/', include('stock.urls')),
 ]
