@@ -31,5 +31,5 @@ urlpatterns = [
 
     # app paths
     path("account/", include("account.urls")),
-    # path('stock/', include('stock.urls')),
+    path('stock/', include('stock.urls')),
 ]
