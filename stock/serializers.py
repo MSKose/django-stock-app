@@ -46,15 +46,19 @@ class ProductSerializer(serializers.ModelSerializer):
         read_only_fields = ('stock',)  # since we don't want to create stock field in POST. Rather, we want to define stock on trasaction part
 
 
-# class CategoryProductsSerializer(serializers.ModelSerializer):
-#     products = ProductSerializer(many=True)
+class CategoryProductsSerializer(serializers.ModelSerializer):
+    '''
+    creating a nested JSON where products are nested into category. Also, the name of the variable 'products' 
+    is no random name, it's the related_name on category field on our Product model
+    '''
+    products = ProductSerializer(many=True) # many=True since we possibly will have more than one products assigned
 
-#     class Meta:
-#         model = Category
-#         fields = (
-#             'name',
-#             'products'
-#         )
+    class Meta:
+        model = Category
+        fields = (
+            'name',
+            'products'
+        )
 
 
 class FirmSerializer(serializers.ModelSerializer):
