@@ -41,7 +41,7 @@ class CategoryView(viewsets.ModelViewSet):
     '''
     def get_serializer_class(self):
         if self.request.query_params.get('name'):
-            return CategoryProductsSerializer # only if we have an endpoint with name filtered/searched will we use CategoryProductsSerializer, which is nested
+            return CategoryProductsSerializer # only if we have an endpoint with name filtered/searched will we utilize CategoryProductsSerializer, which is nested
         else:
             return super().get_serializer_class() # else, return the super serializer, that is, as defined above in th line 23, CategorySerializer
 

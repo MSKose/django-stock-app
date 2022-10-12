@@ -20,10 +20,8 @@
 
 This is a back-end stock-app project made with Django DRF. I have used different tools to develop this project, including drf-yasg, django toolbar, and django rest auth
 
-<!-- ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
-<!-- ![screenshot](./django-quiz-app-gif.gif) -->
 <p align="center">
-  <img src="./django-quiz-app-gif.gif">
+  <img src="https://user-images.githubusercontent.com/98649983/194851648-3e22780b-7e5c-481f-aabc-facc261b485b.gif">
 </p>
 
 <h2 id="stack">Stack & Tools</h2>
@@ -38,11 +36,11 @@ This is a back-end stock-app project made with Django DRF. I have used different
 - dj-rest-auth
 
 ## Notes
-## Entity Relationship Diagram
+### Entity Relationship Diagram
 
 ![Entity Relationship Diagram](https://user-images.githubusercontent.com/98649983/194851017-083393e4-53ef-425d-869c-903d8515fdaa.jpg)
 
-## Project info
+### Project info
 
 #### User Roles (You can set it from the admin panel.)
 
@@ -71,16 +69,46 @@ This is a back-end stock-app project made with Django DRF. I have used different
 .──── django-flight-app (repo)
 │
 ├── README.md
-├── db.sqlite3
-├── main
-│   ├── __init__.py
-│   ├── __pycache__
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
 ├── manage.py
-└── requirements.txt
+├── requirements.txt
+├── main
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── asgi.py
+│   ├── db.sqlite3
+│   ├── settings
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── base.py
+│   │   ├── dev.py
+│   │   └── prod.py
+│   ├── urls.py
+│   └── wsgi.py
+├── account
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   ├── models.py
+│   ├── serializers.py
+│   ├── signals.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── stock
+    ├── __init__.py
+    ├── __pycache__
+    ├── admin.py
+    ├── apps.py
+    ├── migrations
+    ├── models.py
+    ├── permissions.py
+    ├── serializers.py
+    ├── signals.py
+    ├── tests.py
+    ├── urls.py
+    └── views.py
 ```
 
 ## How To Use 
